@@ -1,24 +1,24 @@
 # README
+## Tech Stack
+- Language: Ruby 3.0.6
+- Framework: Rails 7.0.4
+- DB: SQLite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+- Ruby 3.0.6
+- Rails 7.0.4
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+- Fork Repo
+- Install bundle by running ```bundle install``` 
+- ```rails db:create```
+- ```rails db:migrate```
+- ```rails db:seed```
+- ```rails s```
 
-* Configuration
 
-* Database creation
+## Unit Tests
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- You can run ```rspec``` in Rails Console to run simple unit tests for the project
