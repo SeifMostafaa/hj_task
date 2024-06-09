@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The change you wanted was rejected (422)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* Define color variables */
+    :root {
+      --primary-color: #f5f5dc; /* Beige */
+      --secondary-color: #8b4513; /* Warm Brown */
+      --tertiary-color: #808000; /* Olive Green */
+      --color-grey: #dcdcdc; /* Soft Grey */
+      --default-fs: 1.6rem; /* Default Font Size */
+    }
+
+    /* Apply styles to the body */
+    .rails-default-error-page {
+      background-color: var(--primary-color); /* Beige background */
+      color: var(--secondary-color); /* Warm Brown text color */
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 2rem; /* Added padding for spacing */
+      font-size: var(--default-fs); /* Default font size */
+    }
+
+    /* Style the dialog container */
+    .rails-default-error-page div.dialog {
+      width: 95%;
+      max-width: 33em;
+      margin: 4em auto 0;
+      background-color: white; /* White background for the dialog */
+      border-radius: 1rem; /* Rounded corners */
+      box-shadow: 0 3px 8px rgba(50, 50, 50, 0.1); /* Softer shadow */
+      padding: 2rem; /* Padding for better spacing */
+      border: 1px solid var(--color-grey); /* Soft grey border */
+    }
+
+    /* Style the inner dialog */
+    .rails-default-error-page div.dialog > div {
+      border: none; /* Removed border */
+      border-top: 4px solid var(--tertiary-color); /* Olive Green top border */
+      padding: 1rem; /* Padding for spacing */
+    }
+
+    /* Style the heading */
+    .rails-default-error-page h1 {
+      font-size: 2rem; /* Increased font size */
+      color: var(--secondary-color); /* Warm Brown */
+      line-height: 1.5em;
+      margin-bottom: 1rem; /* Added margin */
+    }
+
+    /* Style the paragraph inside the inner dialog */
+    .rails-default-error-page div.dialog > p {
+      margin: 0;
+      padding: 1rem;
+      background-color: var(--color-grey); /* Light grey background */
+      border-radius: 0.5rem; /* Rounded corners */
+      color: var(--secondary-color); /* Warm Brown */
+      box-shadow: 0 2px 4px rgba(50, 50, 50, 0.1); /* Softer shadow */
+    }
+
+    /* Style the bottom paragraph */
+    .rails-default-error-page p {
+      margin: 2rem 0 0;
+      color: var(--secondary-color); /* Warm Brown */
+    }
+  </style>
+</head>
+
+<body class="rails-default-error-page">
+  <!-- This file lives in public/422.html -->
+  <div class="dialog">
+    <div>
+      <h1>The change you wanted was rejected.</h1>
+      <p>Maybe you tried to change something you didn't have access to.</p>
+    </div>
+    <p>If you are the application owner check the logs for more information.</p>
+  </div>
+</body>
+</html>

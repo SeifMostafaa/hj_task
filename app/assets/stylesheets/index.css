@@ -1,0 +1,53 @@
+@import url('search-input.css');
+
+/* Style for the headline section */
+.headline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color); /* Ensure the background color matches */
+    color: var(--secondary-color); /* Text color */
+}
+
+/* Style for the queries list */
+.queries {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-6.5rem);
+    padding-top: 6.5rem;
+    border-radius: 2.5rem;
+    z-index: -11;
+    box-shadow: 0.8rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Background color of the dropdown */
+}
+
+/* Ensure list items align left */
+.queries__list {
+    text-align: left;
+}
+
+/* Style for list items */
+.queries__list--item {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s, border-left 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for list items */
+.queries__list--item:hover {
+    background-color: var(--color-grey); /* Light grey for hover */
+    border-left: 6px solid var(--secondary-color); /* Warm brown for border */
+}
+
+/* Style for links */
+.link {
+    color: var(--secondary-color); /* Warm brown for text */
+    text-decoration: none;
+    padding: 0.5rem; /* Padding for better clickable area */
+    display: inline-block; /* Better layout handling */
+}
+
+/* Ensure right positioning */
+.right {
+    right: 5%;
+}
